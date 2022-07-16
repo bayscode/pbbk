@@ -5,11 +5,6 @@
 @section('body')
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
         <div class="carousel-indicators">
-            {{-- @foreach ($slider as $key => $row)
-                <button type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide-to="{{ $key }}"class="active" aria-current="true"
-                    aria-label="Slide {{ $loop->iteration }}"></button>
-            @endforeach --}}
             @foreach ($slider as $k => $v)
                 <button type="button" data-bs-target="#carouselExampleIndicators"
                     data-bs-slide-to="{{ $k }}"class="active" aria-current="true"
