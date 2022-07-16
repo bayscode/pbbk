@@ -71,7 +71,6 @@
                             <div class="card mt-2 mb-3">
                                 <img src="{{ asset('images') }}/{{ $item->photo }}" class="card-img-top">
                                 <div class="card-body">
-                                    {{-- <h5 class="card-title" style="height: 50px"> --}}
                                     <div class="h5 card-title" style="height: 30px">
 
                                         @if (strlen($item->name) >= 30)
@@ -80,12 +79,10 @@
                                             {{ $item->name }}
                                         @endif
                                     </div>
-                                    {{-- </h5> --}}
                                     <p class="card-text">
                                     <div>
                                         <strong>Rp.{{ $item->price }}</strong>
                                     </div>
-                                    {{-- {{ $item->description }} --}}
                                     <small class="text-primary">Stock {{ $item->stock }}</small>
                                     </p>
                                     <a href="https://api.whatsapp.com/send?phone=+628985995280&text=Punten admin,%20saya%20mau%20beli%20produk%20{{ urlencode($item->name) }}%20bisa%20dibantu?"

@@ -7,7 +7,6 @@ use App\Models\Slider;
 use RealRashid\SweetAlert\Facades\Alert;
 
 
-
 class SliderController extends Controller
 {
     // SLIDER
