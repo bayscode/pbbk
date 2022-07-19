@@ -58,7 +58,8 @@
                         </div>
 
                         <div class="col-md-1">
-                            <a href="{{ url('catalog') }}?category={{ $category_id }}" class="btn w-100 text-white" style="background-color: #2B296C">
+                            <a href="{{ url('catalog') }}?category={{ $category_id }}" class="btn w-100 text-white"
+                                style="background-color: #2B296C">
                                 <i class="bi-x"></i>
                             </a>
                         </div>
@@ -76,12 +77,19 @@
                                             style="background-color: #30317C">
                                             {{ $item->ctgr->name }}
                                         </small>
-                                        
+
+                                        <small
+                                            class="position-absolute top-0 end-0 badge rounded-circle border-light border p-2 bg-danger">
+                                            <div title="Stock {{ $item->stock }}">
+                                                x{{ $item->stock }}
+                                            </div>
+                                        </small>
+
                                         <small
                                             class="position-absolute bottom-0 end-0 badge border border-light bg-primary p-2 text-white btn"
                                             data-bs-toggle="modal" data-bs-target="#modal{{ $item->id }}">Detail
                                         </small>
-                                     </div>
+                                    </div>
                                 </div>
                                 <div class="card-body">
                                     <div class="h6 card-title" style="height: 24px">
@@ -95,7 +103,7 @@
                                     <div class="fw-bold">
                                         Rp.{{ $item->price }}
                                     </div>
-                                    <small style="color: #D063E1">Stock {{ $item->stock }}</small>
+                                    {{-- <small style="color: #D063E1">Stock {{ $item->stock }}</small> --}}
                                     </p>
                                     <a href="https://api.whatsapp.com/send?phone=+628985995280&text=Punten admin,%20saya%20mau%20beli%20produk%20{{ urlencode($item->name) }}%20bisa%20dibantu?"
                                         target="blank" class="myButton text-center w-100">
@@ -117,7 +125,7 @@
                                                     {{ $item->description }}
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <button type="button" class="btn btn-secondary"
+                                                    <button type="button" class="myButtonClose"
                                                         data-bs-dismiss="modal">Close</button>
                                                     <button type="button" class="myButton">Save changes</button>
                                                 </div>

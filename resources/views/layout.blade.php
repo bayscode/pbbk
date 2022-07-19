@@ -25,14 +25,7 @@
 
     @yield('body')
 
-    {{-- <div class="bg-primary">
-        <div class="container-fluid text-white text-center p-3">
-            &copy; 2022 Seluruh Hak Cipta Dilindungi dibuat dengan <i class="bi bi-heart-fill text-danger"></i> oleh
-            Muhamad Iqbal Aditya Putra(021190035)
-        </div>
-    </div> --}}
-
-    <div class="text-center text-white pt-2 pb-2 footer-iqbal" style="background-color: #30317C">
+    <div class="text-center text-white pt-2 pb-2 footer-iqbal" style="background-color: #2B2C7E">
         &copy; 2022 Seluruh Hak Cipta Dilindungi dibuat dengan <i class="bi bi-heart-fill text-danger"></i> oleh Muhamad Iqbal Aditya Putra(021190035)</div>
     </div>
 

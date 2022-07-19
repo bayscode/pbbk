@@ -233,3 +233,29 @@
     position: relative;
     top: 1px;
 }
+
+.myButtonClose {
+    box-shadow: 3px 4px 0px 0px #c21cb9;
+    background: linear-gradient(to bottom, #EA63E3 5%, #b03bab 100%);
+    background-color: #f27fec;
+    border-radius: 5px;
+    border: 1px solid #f27fec;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 13px 44px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #883c84;
+}
+.myButtonClose:hover {
+    background: linear-gradient(to bottom, #e93ee0 5%, #c72abf 100%);
+    background-color: #d92ed0;
+    color: #ffffff;
+    text-decoration: none;
+}
+.myButtonClose:active {
+    position: relative;
+    top: 1px;
+}
