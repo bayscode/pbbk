@@ -8,8 +8,10 @@
         <div class="bg-light p-2">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a class="text-decoration-none text-primary" href="{{ url('home') }}">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-decoration-none text-primary" href="{{ url('user') }}">User Data</a></li>
+                    <li class="breadcrumb-item"><a class="text-decoration-none" style="color: #2B296C"
+                            href="{{ url('home') }}">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-decoration-none" style="color: #2B296C"
+                            href="{{ url('user') }}">User Data</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Add</li>
                 </ol>
             </nav>
@@ -38,7 +40,7 @@
 
                     <form action="{{ url('add-user') }}" method="post">
                         @csrf
-                        <h1 class="h4 mb-3 fw-bold text-primary">ADD USER</h1>
+                        <h1 class="h4 mb-3 fw-bold" style="color: #2B296C">ADD USER</h1>
 
                         <div class="form-floating mb-2">
                             <input value="{{ old('name') }}" type="text" class="form-control" name="name"
@@ -64,7 +66,7 @@
                             <label for="password_confirmation">Password Confirmation</label>
                         </div>
 
-                        <button class="w-100 btn btn-primary btn-sm" type="submit">SAVE</button>
+                        <button class="w-100 myButton" type="submit">SAVE</button>
                     </form>
                 </main>
             </div>

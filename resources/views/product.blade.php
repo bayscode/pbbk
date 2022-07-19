@@ -10,7 +10,7 @@
             <div class="bg-light p-2">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a class="text-decoration-none text-primary" href="{{ url('home') }}">Home</a></li>
+                        <li class="breadcrumb-item"><a class="text-decoration-none" style="color: #2B296C" href="{{ url('home') }}">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Product Data</li>
                     </ol>
                 </nav>
@@ -19,10 +19,10 @@
             <div class="card mt-5 mb-5 shadow-sm">
                     <div class="d-flex p-2">
                         <div class="w-100">
-                            <div class="fw-bold h5 text-primary p-2">PRODUCT DATA</div>
+                            <div class="fw-bold h5 p-2" style="color: #2B296C">PRODUCT DATA</div>
                         </div>
                         <div class="w-100 text-end">
-                            <a href="{{ url('add-product') }}" class="btn btn-primary text-decoration-none">
+                            <a href="{{ url('add-product') }}" class="btn btnBD text-decoration-none">
                                 <i class="bi bi-plus"></i> Product
                             </a>
                         </div>
@@ -44,7 +44,6 @@
                                 <th>NO</th>
                                 <th>DETAIL PRODUCT</th>
                                 <th>CATEGORY</th>
-                                <th>DESCRIPTION</th>
                                 <th>PRICE</th>
                                 <th>STOCK</th>
                                 <th>PHOTO</th>
@@ -57,7 +56,6 @@
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $v->name }}</td>
                                     <td>{{ $v->ctgr->name }}</td>
-                                    <td>{{ $v->description }}</td>
                                     <td>Rp {{ $v->price }}</td>
                                     <td>{{ $v->stock }}</td>
                                     <td>

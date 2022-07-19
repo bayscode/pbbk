@@ -23,14 +23,17 @@
     @include('sweetalert::alert')
     @include('partials.navbar') {{-- Navbar --}}
 
-    <div style="margin-bottom: 60px">
     @yield('body')
-    </div>
 
-    <div class="bg-primary" style="position: fixed; bottom:0;width:100%">
+    {{-- <div class="bg-primary">
         <div class="container-fluid text-white text-center p-3">
-            &copy; 2022 Seluruh Hak Cipta Dilindungi dibuat dengan <i class="bi bi-heart-fill text-danger"></i> oleh Muhamad Iqbal Aditya Putra(021190035)
+            &copy; 2022 Seluruh Hak Cipta Dilindungi dibuat dengan <i class="bi bi-heart-fill text-danger"></i> oleh
+            Muhamad Iqbal Aditya Putra(021190035)
         </div>
+    </div> --}}
+
+    <div class="text-center text-white pt-2 pb-2 footer-iqbal" style="background-color: #30317C">
+        &copy; 2022 Seluruh Hak Cipta Dilindungi dibuat dengan <i class="bi bi-heart-fill text-danger"></i> oleh Muhamad Iqbal Aditya Putra(021190035)</div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

@@ -4,18 +4,19 @@
 @endsection
 
 @section('body')
+
     <div class="bodyLogin text-center imgLogin">
 
+        <div class="object4">
+            <img src="img/LoginBG.svg" alt="">
+        </div>
+
         <div class="object1">
-            <img width="280" src="img/ObjLogin1.svg" alt="">
+            <img width="400" src="img/ObjLogin3.svg" alt="">
         </div>
 
         <div class="object2">
-            <img width="100" src="img/ObjLogin2.svg" alt="">
-        </div>
-
-        <div class="object3">
-            <img width="600" src="img/BgLogin2.svg" alt="">
+            <img width="400" src="img/ObjLogin4.svg" alt="">
         </div>
 
         <div class="login shadow">
@@ -24,7 +25,7 @@
                     @csrf
                     <img class="mb-4" src="{{ asset('img/iconLogin.svg') }}" alt="LogoBaysShop" width="72"
                         height="57">
-                    <h1 class="h4 mb-3 fw-normal">Please sign in</h1>
+                    {{-- <h1 class="h4 mb-3 fw-normal">Please sign in</h1> --}}
 
                     <div class="form-floating mb-2">
                         <input type="text" class="form-control @error('email') is-invalid @enderror" name="email"
@@ -44,10 +45,11 @@
                         @enderror
                     </div>
 
-                    <button class="w-100 btn-lg btn-primary btn" type="submit">Sign in</button>
-                    <p class="mt-4 mb-2 text-muted">&copy; BaysCode-2022</p>
+                    <button class="w-100 myButton" type="submit">Sign in</button>
+                    <p class="mt-4 mb-2 text-muted">&copy; Iqbal-021190035</p>
                 </form>
             </main>
         </div>
     </div>
+
 @endsection

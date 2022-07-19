@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+:root {
+    --text-color: hsla(210, 50%, 85%, 1);
+    --shadow-color: hsla(210, 40%, 52%, 0.4);
+    --btn-color: hsl(210, 80%, 42%);
+    --bg-color: #141218;
+}
 * {
     font-family: "Poppins", sans-serif;
 }
@@ -9,6 +16,34 @@
     padding: 20px;
     border-radius: 12px;
     background: #ffffff;
+    z-index: 999;
+}
+
+/* USER MANAGEMENT */
+.bodyAddUser {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.EditUser {
+    width: 360px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.bodyAddEdit {
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .addUser {
@@ -18,13 +53,46 @@
     border-radius: 12px;
     background: #ffffff;
 }
+/* END USER MANAGEMENT */
 
-.addUserProduct {
-    width: 460px;
+/* CATEGORY MANAGEMENT */
+.addCategory {
+    width: 360px;
     height: min-content;
     padding: 20px;
     border-radius: 12px;
     background: #ffffff;
+}
+
+
+/* END CATEGORY MANAGEMENT */
+
+.addUserProduct {
+    width: 360px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.colorBD {
+    color: #2b296c;
+}
+
+.btnBD {
+    background-color: #2b296c;
+    color: #ffffff;
+}
+
+.btnPK {
+    background-color: #bc60de;
+    color: #ffffff;
+}
+
+.object4 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 .imgLogin {
@@ -34,20 +102,15 @@
 .object1 {
     position: absolute;
     top: 10%;
-    right: 350px;
+    right: 295px;
+    z-index: 999999;
 }
 
 .object2 {
     position: absolute;
-    top: 56%;
-    left: 33%;
-}
-
-.object3 {
-    position: absolute;
-    top: 80%;
-    left: 27%;
-    z-index: -8;
+    top: 10%;
+    left: 18%;
+    z-index: 999999;
 }
 
 .bodyLogin {
@@ -59,19 +122,10 @@
     padding-bottom: 40px;
 }
 
-.bodyAddUser {
-    display: flex;
-    justify-content: center;
-    height: 79vh;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
 .bodyAddCategory {
     display: flex;
     justify-content: center;
-    height: 70vh;
+    height: 60vh;
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -80,7 +134,7 @@
 .bodyAddProduct {
     display: flex;
     justify-content: center;
-    /* height: 70vh; */
+    height: 73vh;
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -89,7 +143,7 @@
 .bodyAddSlider {
     display: flex;
     justify-content: center;
-    height: 75vh;
+    height: 65vh;
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -100,6 +154,30 @@
     max-width: 330px;
     padding: 15px;
     margin: auto;
+}
+
+.editProduct {
+    width: 460px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.form-signinProduct {
+    width: 100%;
+    max-width: 430px;
+    padding: 15px;
+    margin: auto;
+}
+
+.bodyEditCategory {
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .form-signin .form-floating:focus-within {
@@ -120,11 +198,38 @@
 
 /* Footer */
 .footer-iqbal {
-  bottom: 0px;
-  position: fixed;
-  width: 100%;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
 }
 
 .font-iqbal {
     font-family: Poppins;
+}
+
+.myButton {
+    box-shadow: 3px 4px 0px 0px #1564ad;
+    background: linear-gradient(to bottom, #0b2e8e 5%, #378de5 100%);
+    background-color: #0b2e8e;
+    border-radius: 5px;
+    border: 1px solid #337bc4;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 13px 44px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #528ecc;
+}
+.myButton:hover {
+    background: linear-gradient(to bottom, #378de5 5%, #0b2e8e 100%);
+    background-color: #378de5;
+    color: #ffffff;
+    text-decoration: none;
+}
+.myButton:active {
+    position: relative;
+    top: 1px;
 }

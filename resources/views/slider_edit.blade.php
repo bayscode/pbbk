@@ -8,9 +8,9 @@
         <div class="bg-light p-2">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a class="text-decoration-none text-primary" href="{{ url('home') }}">Home</a>
+                    <li class="breadcrumb-item"><a class="text-decoration-none" style="color: #2B296C" href="{{ url('home') }}">Home</a>
                     </li>
-                    <li class="breadcrumb-item"><a class="text-decoration-none text-primary" href="{{ url('slider') }}">Slider
+                    <li class="breadcrumb-item"><a class="text-decoration-none" style="color: #2B296C" href="{{ url('slider') }}">Slider
                             Data</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">Edit</li>
@@ -42,7 +42,7 @@
                     <form action="{{ url('edit-slider') }}/{{ $slider->id }}" method="post"
                         enctype="multipart/form-data">
                         @csrf
-                        <h1 class="h4 mb-3 fw-bold text-primary">EDIT SLIDER</h1>
+                        <h1 class="h4 mb-3 fw-bold" style="color: #2B296C">EDIT SLIDER</h1>
                         <div class="form-floating mb-2">
                             <input value="{{ old('name') ? old('name') : $slider->name }}" type="text" name="name"
                                 id="name" class="form-control" placeholder="Type slider name ...">
@@ -57,8 +57,8 @@
                             <input type="file" name="photo" id="photo" class="form-control">
                         </div>
 
-                        <button class="btn btn-primary btn-sm" type="submit">UPDATE</button>
-                        <button class="btn btn-success btn-sm" type="reset">RESET <i class="bi bi-reset"></i></button>
+                        <button class="btn btnBD btn-sm" type="submit">UPDATE</button>
+                        <button class="btn btnPK btn-sm" type="reset">RESET <i class="bi bi-reset"></i></button>
                     </form>
                 </main>
             </div>

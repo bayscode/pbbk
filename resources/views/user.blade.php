@@ -3,13 +3,13 @@
     User Management
 @endsection
 @section('body')
-    <div class="container font-iqbal">
+    <div class="container">
         <h3 class="mt-3">User Management</h3>
         <div class="bg-light p-2">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item">
-                        <a class="text-decoration-none" href="{{ url('home') }}">
+                        <a class="text-decoration-none colorBD" href="{{ url('home') }}">
                             Home
                         </a>
                     </li>
@@ -22,10 +22,11 @@
         <div class="card shadow-sm mt-5">
             <div class="d-flex p-2">
                 <div class="w-100">
-                    <div class="fw-bold h5 text-primary p-2">USER DATA</div>
+                    <div class="fw-bold h5 colorBD p-2">USER DATA</div>
                 </div>
+                
                 <div class="w-100 text-end">
-                    <a href="{{ url('add-user') }}" class="btn btn-primary text-decoration-none">
+                    <a href="{{ url('add-user') }}" class="btn btnBD text-decoration-none">
                         <i class="bi bi-person-plus"></i> User
                     </a>
                 </div>
@@ -39,6 +40,8 @@
                     </div>
                 @endif
                 {{-- End Alert --}}
+
+                {{-- Table --}}
                 <table class="table align-middle table-hover" id="myTable">
                     <thead>
                         <tr>
@@ -69,6 +72,7 @@
                         @endforeach
                     </tbody>
                 </table>
+                {{-- End Table --}}
             </div>
         </div>
     </div>

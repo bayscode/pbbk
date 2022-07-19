@@ -1,9 +1,9 @@
     {{-- Navbar --}}
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2B296C">
         <div class="container">
             <img src="{{ asset('img/logoweb.svg') }}" alt="" width="30" height="24"
                 class="d-inline-block align-text-top">
-            <a class="navbar-brand" href="#">BayShop</a>
+            <a class="navbar-brand" href="#">BaysVR</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">

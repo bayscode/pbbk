@@ -10,23 +10,24 @@
             <div class="bg-light p-2">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item"><a class="text-decoration-none text-primary" href="{{ url('home') }}">Home</a></li>
+                        <li class="breadcrumb-item"><a class="text-decoration-none" style="color: #2B296C"
+                                href="{{ url('home') }}">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Slider Data</li>
                     </ol>
                 </nav>
             </div>
 
             <div class="card mt-5 mb-5 shadow-sm">
-                    <div class="d-flex p-2">
-                        <div class="w-100">
-                            <div class="fw-bold h5 text-primary p-2">SLIDER DATA</div>
-                        </div>
-                        <div class="w-100 text-end">
-                            <a href="{{ url('add-slider') }}" class="btn btn-primary text-decoration-none">
-                                <i class="bi bi-plus"></i> Slider
-                            </a>
-                        </div>
+                <div class="d-flex p-2">
+                    <div class="w-100">
+                        <div class="fw-bold h5 p-2" style="color: #2B296C">SLIDER DATA</div>
                     </div>
+                    <div class="w-100 text-end">
+                        <a href="{{ url('add-slider') }}" class="btn btnBD text-decoration-none">
+                            <i class="bi bi-plus"></i> Slider
+                        </a>
+                    </div>
+                </div>
                 {{-- </div> --}}
 
                 <div class="card-body">
@@ -41,10 +42,10 @@
                     <table class="table table-hover align-middle" id="myTable">
                         <thead>
                             <tr>
-                                <th>NO</th>   
+                                <th>NO</th>
                                 <th>NAMA</th>
                                 <th>IMAGE</th>
-                                <th>ACT</th>
+                                <th width="15%">ACT</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -62,7 +63,8 @@
                                             <i class='bx bx-edit bx-xs'></i> EDIT
                                         </a>
                                         <a href="{{ route('delete-slider', ['id' => $v->id]) }}"
-                                            onclick="return confirm('Are u sure?')" class="btn btn-danger btn-sm text-decoration-none">
+                                            onclick="return confirm('Are u sure?')"
+                                            class="btn btn-danger btn-sm text-decoration-none">
                                             <i class='bx bx-trash'></i> DELETE
                                         </a>
                                     </td>
