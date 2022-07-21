@@ -26,7 +26,8 @@
     @yield('body')
 
     <div class="text-center text-white pt-2 pb-2 footer-iqbal" style="background-color: #2B2C7E">
-        &copy; 2022 Seluruh Hak Cipta Dilindungi dibuat dengan <i class="bi bi-heart-fill text-danger"></i> oleh Muhamad Iqbal Aditya Putra(021190035)</div>
+        &copy; <?= date('Y') ?> Seluruh Hak Cipta Dilindungi dibuat dengan <i class="bi bi-heart-fill text-danger"></i>
+        oleh Muhamad Iqbal Aditya Putra(021190035)</div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

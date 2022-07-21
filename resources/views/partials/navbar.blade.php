@@ -1,5 +1,5 @@
     {{-- Navbar --}}
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2B296C">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #26246D">
         <div class="container">
             <img src="{{ asset('img/logoweb.svg') }}" alt="" width="30" height="24"
                 class="d-inline-block align-text-top">
@@ -17,7 +17,6 @@
                     <li class="nav-item">
                         <a class="nav-link text-decoration-none active" aria-current="page" href="{{ url('catalog') }}">Catalog</a>
                     </li>
-
                     @if (Auth::user())
                         <li class="nav-item">
                             <a class="nav-link text-decoration-none active" aria-current="page" href="{{ url('user') }}">User</a>
