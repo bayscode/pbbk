@@ -8,7 +8,7 @@
     <div class="bodyLogin text-center imgLogin">
 
         <div class="object4">
-            <img src="img/LoginBG.svg" alt="">
+            <img src="img/LoginBG-01.png" alt="">
         </div>
 
         <div class="object1">
