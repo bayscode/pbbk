@@ -8,6 +8,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CatalogController;
 use App\Http\Controllers\SliderController;
+use App\Http\Controllers\NoteIqbalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -60,4 +61,14 @@ Route::group(['middleware' => 'auth'], function () {
   Route::get('edit-slider/{id}', [SliderController::class, 'edit']);
   Route::post('edit-slider/{id}', [SliderController::class, 'edit_process']);
   Route::get('delete-slider/{id}', [SliderController::class, 'del_process'])->name('delete-slider');
+
+  // NOTE
+  Route::get('note', [NoteIqbalController::class, 'index']);
+  Route::get('add-note', [NoteIqbalController::class, 'add']);
+  Route::post('add-note', [NoteIqbalController::class, 'add_process']);
+
+  Route::get('edit-note/{id}', [NoteIqbalController::class, 'edit']);
+  Route::post('edit-note/{id}', [NoteIqbalController::class, 'edit_process']);
+  Route::get('delete-note/{id}', [NoteIqbalController::class, 'del_process'])->name('delete-note');
+
 });

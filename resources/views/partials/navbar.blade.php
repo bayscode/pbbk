@@ -31,6 +31,9 @@
                             <a class="nav-link text-decoration-none active" aria-current="page" href="{{ url('slider') }}">Slider</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-decoration-none active" aria-current="page" href="{{ url('note') }}">Note</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-decoration-none active" aria-current="page" href="{{ url('logout') }}">Logout</a>
                         </li>
                     @else

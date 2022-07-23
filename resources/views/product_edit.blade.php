@@ -40,55 +40,7 @@
                     @endif
                     {{-- End Alert --}}
 
-                    {{-- <form action="{{ url('edit-product') }}/{{ $product->id }}" method="post"
-                        enctype="multipart/form-data">
-                        @csrf
-                        <h1 class="h4 mb-3 fw-bold text-primary">EDIT PRODUCT</h1>
-                        <div class="form-floating mb-2">
-                            <select name="category" id="category" class="form-control">
-                                <option value="">Choose</option>
-                                @foreach ($data as $v)
-                                    <option value="{{ $v->id }}" @if ((old('category') ? old('category') : $product->category_id) == $v->id) selected @endif>
-                                        {{ $v->name }}</option>
-                                @endforeach
-                            </select>
-                            <label for="category">Category</label>
-                        </div>
-
-                        <div class="form-floating mb-2">
-                            <input value="{{ old('name') ? old('name') : $product->name }}" type="text" name="name"
-                                id="name" class="form-control" placeholder="Type product name ...">
-                            <label for="text">Merk</label>
-                        </div>
-
-                        <div class="form-floating mb-2">
-                            <textarea name="description" id="description" cols="30" rows="10" class="form-control"
-                                placeholder="Type description">{{ old('description') ? old('description') : $product->description }}</textarea>
-                            <label for="description">Description</label>
-                        </div>
-
-                        <div class="form-floating mb-2">
-                            <input value="{{ old('price') ? old('price') : $product->price }}" type="text"
-                                name="price" id="price" class="form-control" placeholder="Type price ...">
-                            <label for="text">Price</label>
-                        </div>
-
-                        <div class="form-floating mb-2">
-                            <input value="{{ old('stock') ? old('stock') : $product->stock }}" type="text"
-                                name="stock" id="stock" class="form-control" placeholder="Type stock ...">
-                            <label for="text">Stock</label>
-                        </div>
-
-                        <div class="input-group mb-2">
-                            <img src="{{ asset('images/' . $product->photo) }}" class="w-25 img-thumbnail">
-                        </div>
-
-                        <div class="input-group mb-2">
-                            <input type="file" name="photo" id="photo" class="form-control">
-                        </div>
-
-                        
-                    </form> --}}
+                    
                     <div class="row">
                         <form action="{{ url('edit-product') }}/{{ $product->id }}" method="post"
                             enctype="multipart/form-data">
