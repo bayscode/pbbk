@@ -69,9 +69,6 @@ class NoteIqbalController extends Controller
         return redirect('edit-note/' . $id);
     }
 
-
-
-
     // NOTE DELETE PROCESS
     public function del_process(Request $req, $id)
     {
