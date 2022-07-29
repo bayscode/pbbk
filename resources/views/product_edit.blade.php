@@ -8,10 +8,10 @@
         <div class="bg-light p-2">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0">
-                    <li class="breadcrumb-item"><a class="text-decoration-none text-primary"
+                    <li class="breadcrumb-item"><a class="text-decoration-none" style="color: #26246D"
                             href="{{ url('home') }}">Home</a>
                     </li>
-                    <li class="breadcrumb-item"><a class="text-decoration-none text-primary"
+                    <li class="breadcrumb-item"><a class="text-decoration-none" style="color: #26246D"
                             href="{{ url('product') }}">Product Data</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">Edit</li>
@@ -46,7 +46,7 @@
                             enctype="multipart/form-data">
                             @csrf
                             <div class="col-md-12">
-                                <h1 class="h4 mb-3 fw-bold text-primary">EDIT PRODUCT</h1>
+                                <h1 class="h4 mb-3 fw-bold" style="color: #26246D">EDIT PRODUCT</h1>
                             </div>
                         
                     </div>
@@ -113,8 +113,8 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn-primary btn-sm" type="submit">UPDATE</button>
-                    <button class="btn btn-success btn-sm" type="reset">RESET</button>
+                    <button class="btn btnBD btn-sm" type="submit">UPDATE</button>
+                    <button class="btn btnPK btn-sm" type="reset">RESET</button>
                     </form>
                 </main>
             </div>
